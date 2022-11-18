@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddEmployee.aspx.cs" Inherits="Akash2Asp.AddEmployee" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-6 offset-3">
             <div class="card">
                 <div class="card-header">
@@ -8,6 +8,10 @@
 
                 </div>
                 <div class="card-body">
+                    <div class="form-group">
+                        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+
+                    </div>
                     <div class="form-group">
                         <label>Enter name</label>
                         <asp:TextBox ID="txtname" runat="server" CssClass="form-control"></asp:TextBox>
